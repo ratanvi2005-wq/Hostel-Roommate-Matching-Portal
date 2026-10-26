@@ -1,0 +1,157 @@
+.add-hostel-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1rem;
+}
+
+.hostel-form-card {
+  background: #ffffff;
+  max-width: 750px;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+  border: 1px solid #e2e8f0;
+}
+
+.hostel-form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hostel-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hostel-form-header h1 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.hostel-form-header p {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.hostel-message {
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hostel-message.success {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.hostel-message.error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.hostel-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .hostel-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hostel-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.hostel-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.hostel-field label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.hostel-field input,
+.hostel-field select,
+.hostel-field textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  color: #0f172a;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.hostel-field input:focus,
+.hostel-field select:focus,
+.hostel-field textarea:focus {
+  border-color: #ea580c;
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
+}
+
+.hostel-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.hostel-reset-btn {
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hostel-reset-btn:hover {
+  background: #e2e8f0;
+}
+
+.hostel-submit-btn {
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #ea580c, #d97706);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+  transition: transform 0.15s, opacity 0.2s;
+}
+
+.hostel-submit-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.hostel-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
